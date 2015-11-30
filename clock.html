@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Graduation Clock</title>
-		<script src="clock.js"></script>
+	<head>
+		<title>Graduation Clock</title>
+			<script src="jquery-1.11.3.js"></script>
+			<script src="clock.js"></script>
+			<script type="text/javascript">$(document).ready(function(){});</script>
+	</head>
+	<body>
+		<h1>This is how long until I graduate</h1>
+		<p id="Date"></p>
 
-</head>
-<body>
-	<h1>This is how long until I graduate</h1>
-	<p id="demo"></p>
-	<script type="text/javascript">myFunction();</script>
-</body>
+		<script type="text/javascript">getCurrentTime(); calculateTimeTo();</script>
+	</body>
 </html>
